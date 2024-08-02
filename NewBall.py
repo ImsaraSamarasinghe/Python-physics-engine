@@ -119,8 +119,11 @@ class PhysicsEngine:
                     if self.click_pos:
                         # Calculate velocity based on the distance and direction
                         direction = self.release_pos - self.click_pos
-                        speed = direction.length() / 10  # Adjust the divisor for speed scaling
-                        velocity = direction.normalize() * speed
+                        if self.release_pos != self.click_pos:
+                            speed = direction.length() / 10  # Adjust the divisor for speed scaling
+                            velocity = direction.normalize() * speed
+                        else:
+                            velocity = (0,0)
                         self.add_ball(self.click_pos, velocity)
                         self.click_pos = None
 
