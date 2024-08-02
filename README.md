@@ -12,3 +12,6 @@ This project was made so that I could learn the PyGame library. I intend to buil
 3.  Click, drag and release any mouse button to launch balls
 4.  Click and release to drop balls
 
+## Requirments
+1.    Python 3.10.12 or newer
+2.    PyGame
