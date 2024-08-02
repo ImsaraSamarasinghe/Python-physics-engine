@@ -3,7 +3,7 @@ from sys import exit
 from math import sqrt
 
 class PhysicsEngine:
-    def __init__(self, width=800, height=800, gravity=0.5, ball_radius=20, ball_color=(255, 0, 0)):
+    def __init__(self, width=800, height=800, gravity=0.5, ball_radius=10, ball_color=(255, 0, 0)):
         pygame.init()
         self.width = width
         self.height = height
@@ -96,7 +96,7 @@ class PhysicsEngine:
 
     def draw(self):
         # Clear screen
-        self.screen.fill((255, 255, 255))
+        self.screen.fill((0,0,0))
         
         # Draw all balls
         for ball in self.balls:
@@ -123,9 +123,13 @@ class PhysicsEngine:
                             speed = direction.length() / 10  # Adjust the divisor for speed scaling
                             velocity = direction.normalize() * speed
                         else:
-                            velocity = (0,0)
+                            velocity = (0,0) # dropping
                         self.add_ball(self.click_pos, velocity)
                         self.click_pos = None
+                
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_x:
+                        self.balls.clear() # clear the balls list when "KEY x" is pressed 
 
             self.update()
             self.draw()
