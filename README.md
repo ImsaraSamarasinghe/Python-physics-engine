@@ -4,7 +4,7 @@
 ![Simulation Screen shot](sim.jpeg)
 
 ## Description
-This project was made so that I could learn the PyGame library. I intend to build more physics simulations in the future.
+This project was made so that I could learn the PyGame library. I intend to build more physics simulations in the future. So far this code can detect collisions between balls and between balls and walls. New balls are spawned by clicking on the screen.
 
 ## Instructions for the use of the PyGame Visualisation Window
 1.  PRESS x: Removes all balls
