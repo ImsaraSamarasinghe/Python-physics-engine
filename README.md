@@ -1,1 +1,1 @@
-![Simulation Screen shot](sim.png)
+![Simulation Screen shot](sim.jpeg)
