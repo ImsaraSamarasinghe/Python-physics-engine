@@ -54,6 +54,11 @@ To run the code, simply execute the script in your terminal or preferred Python 
 python physics_engine.py
 ```
 
+## Output
+<div style="text-align: center;">
+ <img src="PhysicsEnginewithCollisionsUbuntu2024-09-2614-39-22-ezgif.com-video-to-gif-converter.gif" alt="Balls"/>
+</div>
+
 ## Future Improvements
 
 - Adding more advanced features like ball friction or spin.
